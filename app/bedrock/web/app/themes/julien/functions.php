@@ -50,3 +50,10 @@ if (function_exists('acf_register_block_type')) {
         ]);
     });
 }
+
+function wpb_custom_new_menu()
+{
+    register_nav_menu('my-custom-menu', __('My Custom Menu'));
+}
+
+add_action('init', 'wpb_custom_new_menu');

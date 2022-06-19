@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0aee6b3b5668c3a2d487f5236e107258",
+    "content-hash": "c25966d8e7caab074ce7c90dc8a58732",
     "packages": [
         {
             "name": "composer/installers",
@@ -1204,6 +1204,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/updraft/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-bootstrap-blocks",
+            "version": "4.2.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-bootstrap-blocks/",
+                "reference": "tags/4.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-bootstrap-blocks.4.2.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-bootstrap-blocks/"
         },
         {
             "name": "wpackagist-plugin/wp-optimize",

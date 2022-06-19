@@ -35,6 +35,18 @@ Author: Julien Lecarpentier
     font-weight: bold !important;
 }
 
+h1, .h1 {
+    font-size: 4.6875rem !important;
+}
+
+h2, .h2 {
+    font-size: 3.125rem !important;
+}
+
+h3, .h3 {
+    font-size: 2rem !important;
+}
+
 .review-number,
 .review-text {
     color: #051145;
@@ -60,4 +72,14 @@ Author: Julien Lecarpentier
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+.btn-secondary {
+    background-color: #428bca !important;
+    border-color: #357ebd !important;
+}
+
+.btn-secondary:hover {
+    background-color: #3276b1 !important;
+    border-color: #285e8e !important;
 }
