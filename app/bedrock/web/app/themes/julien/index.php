@@ -1,3 +1,5 @@
-<?php get_header() ?>
-    Bonjour tout le monde : <?php wp_title() ?>
-<?php get_footer() ?>
+<?php get_header(); ?>
+<div class='container'>
+<?php the_content(); ?>
+</div>
+<?php get_footer(); ?>

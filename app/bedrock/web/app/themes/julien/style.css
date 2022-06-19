@@ -2,3 +2,62 @@
 Theme Name: Julien
 Author: Julien Lecarpentier
 */
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Bold.ttf");
+    font-weight: 700;
+}
+
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+    font-family: 'Playfair Display', serif !important;
+    color: #051145 !important;
+    font-weight: bold !important;
+}
+
+.review-number,
+.review-text {
+    color: #051145;
+    font-family: 'Poppins', sans-serif;
+}
+
+.review-number {
+    font-size: 3.4375rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+}
+
+.review-text {
+    font-size: 1rem;
+    font-weight: 700;
+    white-space:nowrap;
+}
+
+.review-stars > i{
+    font-size: 12px;
+    color: #F0AD4E;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
