@@ -3,8 +3,8 @@
 function julien_supports()
 {
     add_theme_support('title-tag');
-    add_theme_support( 'wp-block-styles' );
-    add_editor_style( 'style.css' );
+    add_theme_support('wp-block-styles');
+    add_editor_style('style.css');
 }
 add_action('after_setup_theme', 'julien_supports');
 
@@ -22,16 +22,15 @@ function julien_register_assets()
 }
 add_action('wp_enqueue_scripts', 'julien_register_assets');
 
-function wpc_mime_types($mimes) {
-	$mimes['svg'] = 'image/svg+xml';
-	return $mimes;
+function wpc_mime_types($mimes)
+{
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
 }
 add_filter('upload_mimes', 'wpc_mime_types');
 
-if(function_exists('acf_register_block_type'))
-{
-    add_action('acf/init', function()
-    {
+if (function_exists('acf_register_block_type')) {
+    add_action('acf/init', function () {
         acf_register_block_type([
             'name' => 'featured_in',
             'title' => 'Featured In',
