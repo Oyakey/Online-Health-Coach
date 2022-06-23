@@ -3,6 +3,10 @@ Theme Name: Julien
 Author: Julien Lecarpentier
 */
 
+html {
+    font-size: 95%;
+}
+
 @font-face {
     font-family: "Playfair Display";
     src: url("./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf");
@@ -41,6 +45,7 @@ h1, .h1 {
 
 h2, .h2 {
     font-size: 3.125rem !important;
+    margin-bottom: 1rem !important;
 }
 
 h3, .h3 {
@@ -54,9 +59,9 @@ h3, .h3 {
 }
 
 .review-number {
-    font-size: 3.4375rem;
+    font-size: 4.5rem;
     font-weight: 700;
-    line-height: 3.5rem;
+    line-height: 4.5rem;
 }
 
 .review-text {
@@ -83,3 +88,104 @@ body {
     background-color: #3276b1 !important;
     border-color: #285e8e !important;
 }
+
+.btn-primary {
+    background-color: #278575 !important;
+    border-color: #278575 !important;
+    padding: .8rem 2rem;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #216F62 !important;
+    border-color: #216F62 !important;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: #216F62 !important;
+}
+
+.active {
+    color: #216F62 !important;
+}
+
+.nav-item>* {
+    margin: 0rem 1rem;
+}
+
+.pattern-lead {
+    width: 200px;
+    position: relative;
+    left: -6rem;
+    top: -3rem;
+    z-index: -1;
+}
+
+.page-lead {
+    position: relative;
+    left: -3rem;
+}
+
+.decorative-pattern {
+    position: absolute;
+    z-index: -1;
+}
+
+.text-primary {
+    color:#278575 !important;
+}
+
+.home-badge {
+    letter-spacing: 1px;
+}
+
+.play-badge {
+    position: absolute;
+    border-radius: 5rem;
+    background-color: #278575;
+    text-align: center;
+    padding: 2rem;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in-out;
+}
+
+.play-badge>i {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    display: block;
+    transition: .4s ease-in-out;
+    transform: translate(10%, 0);
+}
+
+.play-badge:hover {
+    transform: translate(-50%, -50%) scale(1.1);   
+    cursor: pointer;
+    
+}
+
+.h-fit-content {
+    height: fit-content;
+}
+
+.button-pattern {
+    z-index: -1;
+    transform: translate(-100%, 0%);
+}
+
+@media (max-width: 768px) { 
+    .page-lead {
+        left: 0px !important;
+    }
+ }
+
+ @media (max-width: 992px) { 
+    html {
+        font-size: 75%;
+    }
+ }

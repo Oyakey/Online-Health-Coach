@@ -1,5 +1,5 @@
 <div class="review-number mb-0"><?php echo get_field('number'); ?></div>
-<div class="review-stars">
+<div class="review-stars mb-1">
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>

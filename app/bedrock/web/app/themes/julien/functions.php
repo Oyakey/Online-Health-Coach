@@ -4,7 +4,7 @@ function julien_supports()
 {
     add_theme_support('title-tag');
     add_theme_support('wp-block-styles');
-    add_editor_style('style.css');
+    add_theme_support('custom-logo');
 }
 add_action('after_setup_theme', 'julien_supports');
 
@@ -34,26 +34,64 @@ if (function_exists('acf_register_block_type')) {
         acf_register_block_type([
             'name' => 'featured_in',
             'title' => 'Featured In',
+            'category' => 'theme',
             'render_template' => 'blocs/featured.php'
         ]);
 
         acf_register_block_type([
             'name' => 'review',
             'title' => 'Review',
+            'category' => 'theme',
             'render_template' => 'blocs/review.php'
         ]);
 
         acf_register_block_type([
             'name' => 'course',
             'title' => 'Course',
+            'category' => 'theme',
             'render_template' => 'blocs/course.php'
+        ]);
+        
+        acf_register_block_type([
+            'name' => 'studentImageGallery',
+            'title' => 'Student Image Gallery',
+            'category' => 'theme',
+            'render_template' => 'blocs/studentImageGallery.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'mainTitleLead',
+            'title' => 'Pages Main Title and Lead Paragraph',
+            'category' => 'theme',
+            'render_template' => 'blocs/mainTitleLead.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'pattern',
+            'title' => 'Decorative pattern',
+            'category' => 'theme',
+            'render_template' => 'blocs/pattern.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'homeFirstScreen',
+            'title' => 'Home 1st Screen',
+            'category' => 'theme',
+            'render_template' => 'blocs/homeFirstScreen.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'homeCourses',
+            'title' => 'Home Courses',
+            'category' => 'theme',
+            'render_template' => 'blocs/homeCourses.php'
         ]);
     });
 }
 
-function wpb_custom_new_menu()
+function my_custom_new_menu()
 {
-    register_nav_menu('my-custom-menu', __('My Custom Menu'));
+    register_nav_menu('nav_menu', __('Menu de navigation'));
 }
 
-add_action('init', 'wpb_custom_new_menu');
+add_action('init', 'my_custom_new_menu');
