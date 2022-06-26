@@ -1,1 +1,1 @@
-<image class="decorative-pattern" src=<?php echo get_field('image') ?> style="left:<?php echo get_field('position') ?>; width:<?php echo get_field('width') ?>">
+<img class="decorative-pattern <?php echo get_field('class_css') ?>" src=<?php echo get_field('image') ?> style="left:<?php echo get_field('position') ?>; width:<?php echo get_field('width') ?>">

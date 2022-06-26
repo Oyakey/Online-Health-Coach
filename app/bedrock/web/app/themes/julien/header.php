@@ -8,8 +8,8 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-lg">
-                <a class="navbar-brand" href="<?php echo home_url() ?>"><?php echo the_custom_logo() ?></a>
+            <div class="container-lg text-start text-lg-center">
+                <?php echo the_custom_logo() ?>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,7 +37,7 @@
 
                     $button = get_field('button', wp_get_nav_menu_object($navMenuID));
                     if ($button) {
-                        echo "<div class='nav-item'>";
+                        echo "<div class='nav-item d-none d-lg-block'>";
                         echo "<a class='btn btn-primary' href=".$button['url'].">". $button['title'] ."</a>";
                         echo "</div>";
                     }

@@ -19,6 +19,11 @@ html {
 }
 @font-face {
     font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Poppins";
     src: url("./assets/fonts/Poppins-SemiBold.ttf");
     font-weight: 600;
 }
@@ -178,14 +183,242 @@ body {
     transform: translate(-100%, 0%);
 }
 
-@media (max-width: 768px) { 
+.navbar-toggler {
+    border: none !important;
+}
+
+.heading-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.bg-light {
+    background-color: #ecf0f2 !important;
+}
+
+.separator:before {
+    content: "";
+    border-top: solid 1px #278575;
+    flex-grow: 1;
+}
+
+.separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.separator:after {
+    content: "";
+    border-top: solid 1px #278575;
+    flex-grow: 1; 
+}
+
+.my-list-group {
+    padding: 0;
+    font-weight: 500;
+}
+
+.my-list-group > li {
+    padding-bottom: 1rem;
+}
+
+.bg {
+    z-index: -10;
+}
+
+.origin-center {
+    transform: translate(-50%, -50%) !important;
+}
+
+.origin-x-center {
+    transform: translate(-50%, 0) !important;
+}
+
+.origin-y-center {
+    transform: translate(0, -50%) !important;
+}
+
+.start-75 {
+    left: 75% !important;
+}
+
+.top-75 {
+    top: 75% !important;
+}
+
+.z-m10 {
+    z-index: -10 !important;
+}
+.z-10 {
+    z-index: 10 !important;
+}
+.z-100 {
+    z-index: 100 !important;
+}
+
+.my-form-control {
+    padding: .8rem 2rem !important;
+    border-radius: 2px !important;
+}
+
+.social-link {
+    color: #051145 !important;
+    font-size: 1.3rem !important;
+}
+
+.social-link:hover {
+    color: #216F62 !important;
+}
+
+.p-6 {
+    padding: 6rem !important;
+}
+
+.py-6 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.px-6 {
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+}
+
+.pb-6 {
+    padding-bottom: 6rem !important;
+}
+
+.pt-6 {
+    padding-top: 6rem !important;
+}
+
+::-moz-selection, ::selection {
+    color: #fff;
+    background: #278575;
+}
+
+.autoComplete_wrapper {
+    position: relative;
+}
+
+.autoComplete_wrapper > i {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: #6C757D;
+}
+
+.autoComplete_wrapper > ul {
+    background-color: white;
+    padding: .5rem 1rem 1rem 1rem;
+    border-radius: 2px;
+    border: solid 1px rgba(0,0,0,.2);
+    position: absolute;
+    width: 100%;
+}
+
+.autoComplete_wrapper > ul > li {
+    display: block;
+    padding: .4rem 1rem;
+    border-radius: 2px;
+    text-align: left;
+}
+
+#autoComplete {
+    padding-left: 3rem !important;
+}
+
+.autoComplete_wrapper > ul > li:hover {
+    background-color: #DCEFEC;
+    cursor: pointer;
+}
+
+.form-control:focus {
+    border-color: #91CBC4 !important;
+    box-shadow: 0 0 0 .25rem #91CBC464;
+}
+
+.autoComplete_wrapper > ul > li mark {
+    font-weight: bold;
+    color: #278575;
+    background-color: transparent !important;
+    padding: 0;
+}
+
+.map {
+    height: 300px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 50px -10px;
+}
+
+.tns-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tns-controls [aria-controls] {
+    font-size: 15px;
+    margin: 0 5px;
+    padding: 0 1em;
+    height: 2.5em;
+    color: white;
+    background-color: #428bca;
+    border: solid 1px #3276b1;
+    border-radius: 3px;
+}
+
+.tns-nav > [aria-controls] {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #ddd;
+    border: 0;
+}
+
+.tns-nav > .tns-nav-active {
+    background: #999;
+}
+
+.tns-nav {
+    text-align: center;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5% !important;
+    }
+
     .page-lead {
         left: 0px !important;
     }
+
+    h1, .h1 {
+        font-size: 3rem !important;
+    }
+
+    h2, .h2 {
+        font-size: 2.5rem !important;
+    }
+
+    h3, .h3 {
+        font-size: 1.8rem !important;
+    }
  }
 
- @media (max-width: 992px) { 
+@media (max-width: 992px) { 
     html {
-        font-size: 75%;
+        font-size: 93.75%;
+    }
+
+    .map {
+        height: 230px;
     }
  }

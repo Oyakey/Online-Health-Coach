@@ -16,7 +16,7 @@
             <img class="position-absolute button-pattern top-50 start-50" src="/app/themes/julien/blocs/assets/pattern.png" width="200">
         </a>
     </div>
-    <div class="col-8 col-md-6 col-xl-5 mb-5 h-fit-content position-relative">
+    <div class="col-10 col-md-6 col-xl-5 mb-5 h-fit-content position-relative">
         <img class="img-fluid w-100" src=<?php echo get_field('image') ?>>
         <div>
             <div class="play-badge position-absolute top-50 start-50">

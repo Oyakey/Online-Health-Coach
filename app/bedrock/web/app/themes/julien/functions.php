@@ -12,12 +12,19 @@ function julien_register_assets()
 {
     wp_register_style('style', get_stylesheet_uri());
     wp_register_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
+    wp_register_style('autoComplete', 'https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.min.css');
+    wp_register_style('tiny-slider', 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css');
     wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js', ['popper', 'jquery'], false, true);
     wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js', [], false, true);
+    wp_register_script('autoComplete', 'https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js', [], false, false);
+    wp_register_script('tiny-slider', 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js', [], false, false);
     wp_deregister_script('jquery');
     wp_register_script('jquery', 'https://cdn.jsdelivr.net/npm/jquery', [], false, true);
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
+    wp_enqueue_script('autoComplete');
+    wp_enqueue_style('tiny-slider');
+    wp_enqueue_script('tiny-slider');
     wp_enqueue_style('style');
 }
 add_action('wp_enqueue_scripts', 'julien_register_assets');
@@ -85,6 +92,27 @@ if (function_exists('acf_register_block_type')) {
             'title' => 'Home Courses',
             'category' => 'theme',
             'render_template' => 'blocs/homeCourses.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'featuresBenefits',
+            'title' => 'Features & Benefits',
+            'category' => 'theme',
+            'render_template' => 'blocs/featuresBenefits.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'courseSearch',
+            'title' => 'Course Search',
+            'category' => 'theme',
+            'render_template' => 'blocs/courseSearch.php'
+        ]);
+
+        acf_register_block_type([
+            'name' => 'courseSlider',
+            'title' => 'Course Slider',
+            'category' => 'theme',
+            'render_template' => 'blocs/courseSlider.php'
         ]);
     });
 }
